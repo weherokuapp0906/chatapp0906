@@ -11,7 +11,7 @@ jobs:
         - MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
         - MYSQL_ROOT_HOST: '127.0.0.1'
 
-    working_directory: ~/sample_app  #自身のアプリディレクトリ名を設定
+    working_directory: ~/chatapp  #自身のアプリディレクトリ名を設定
 
 
     steps:
@@ -40,7 +40,8 @@ jobs:
     - run:
         name: Databasesetup
         command: |
-           bundle exec rake db:create and rake db:migrate
+           bundle exec rake db:create
+           bundle exec rake db:migrate
            bundle exec rake db:schema:load
 
     # run tests!
