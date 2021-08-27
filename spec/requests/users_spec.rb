@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe "Users", type: :request do
   describe "GET /show" do
-    it "returns http success" do
+    it "returns http successfully" do
       get "/users/show"
-      expect(response).to have_http_status(:successful)
+      expect(response).to be_successful
     end
   end
 
