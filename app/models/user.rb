@@ -4,7 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable, :authentication_keys => [:login]
   attr_accessor :login
-  
+  has_many :entries, dependent: :destroy
+  has_many :direct_messages, dependent: :destroy
+  has_many :rooms, through: :entries
 
   validates :username,
   uniqueness: { case_sensitive: :false },
