@@ -4,7 +4,7 @@
 
 <% unless @user.id == current_user.id %>
   <% if @isRoom == true %>
-    <%= link_to "チャットへGo1!", room_path(@roomId) %>
+    <%= link_to "チャットへGo3!", room_path(@roomId) %>
   <% else %>
     <%= form_for @room do |f| %>
       <%= fields_for @entry do |e| %>
