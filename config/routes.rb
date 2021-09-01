@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
   resources :rooms
-  root "articles#index"
+  root "myuser#show"
   resources :articles
   get "myuser/show"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

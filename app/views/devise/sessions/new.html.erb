@@ -1,24 +1,37 @@
 <h2>Log in</h2>
 
+<main class="form-signin">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-<p><%= f.label :login %><br />
-<%= f.text_field :login %></p>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+    <img class="mb-4" src="../images/bootstrap-logo.svg" alt="" width="72" height="57" loading="lazy">
+    <h1 class="h3 mb-3 fw-normal">サインインをどうぞ</h1>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+    <div class="form-floating">
+      <%= f.text_field :login, :class => "form-control", :id => "floatingInput", :placeholder => "name@example.com"  %>
+      <!-- <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"> -->
+      <label for="floatingInput">Emailまたはユーザー名</label>
     </div>
-  <% end %>
+    <div class="form-floating">
+      <%= f.password_field :password, autocomplete: "current-password", :class => "form-control", :id => "floatingPassword", :placeholder => "パスワード" %>
+      <!-- <input type="password" class="form-control" id="floatingPassword" placeholder="パスワード"> -->
+      <label for="floatingPassword">パスワード</label>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+
+    <% if devise_mapping.rememberable? %>
+    <div class="form-check mb-3">
+      <label>
+          <%= f.check_box :remember_me %>
+        <!-- <input type="checkbox" value="remember-me">  -->
+        状態を記憶する
+      </label>
+    </div>
+    <% end %>
+
+    <%= f.submit "サインイン", class: "w-100 btn btn-lg btn-primary" %>
+    <!-- <button class="w-100 btn btn-lg btn-primary" type="submit">サインイン</button> -->
+
+
 <% end %>
-
 <%= render "devise/shared/links" %>
+</main>

@@ -1,7 +1,31 @@
-<h1>マイページ</h1>
-<p><%= @user.username %></p>
-<p><%= @user.profile %></p>
+<div class="container">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+    <h1>アカウント情報</h1>
+  <div class="card pt-5 pb-5">
+  <div class="card-body">
+    <div class="row">
+<div class="col-3">
+<i class="bi bi-person-circle fontcolor3"></i>
+</div>
+<div class="col-9">
+  <p><%= @user.username %></p>
+  <p><%= @user.profile %></p>
+  <p> <%= link_to 'アカウント情報変更', edit_user_registration_path %></p>
 
-<% @rooms.each do |room| %>
-  <a href="/rooms/<%= room.id %>"><%= room.id %></a>
-<% end %>
+  <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
+</div>
+    </div>
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+  <br>
+</div>
