@@ -13,3 +13,138 @@
  *= require_tree .
  *= require_self
  */
+
+ html,body {
+ height: 100%;
+
+   background-color: #f5f5f5;
+ }
+
+
+
+ .form-signin {
+   width: 100%;
+   max-width: 330px;
+   padding: 15px;
+   margin: auto;
+ }
+
+ .form-signin .checkbox {
+   font-weight: 400;
+ }
+
+ .form-signin .form-floating:focus-within {
+   z-index: 2;
+ }
+
+ .form-signin input[type="email"] {
+   margin-bottom: -1px;
+   border-bottom-right-radius: 0;
+   border-bottom-left-radius: 0;
+ }
+
+ .form-signin input[type="password"] {
+   margin-bottom: 10px;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+ }
+
+
+ .headerclass {
+   background-color: #2b324c;
+   min-height: 100%;
+ }
+
+ .wrapp {
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+ }
+
+ .rowwrapp {
+   height: 100vh;
+ }
+
+ .fontcolor {
+   color: #fff;
+   font-size: 45px;
+ }
+
+ .fontcolor2 {
+   font-size: 55px;
+ }
+
+ .fontcolor3 {
+   font-size: 100px;
+ }
+
+ .flexdesign {
+   display: flex;
+   justify-content: center;
+ }
+
+ .textflex {
+   display: flex;
+   justify-content: flex-start;
+ }
+
+ .boxflex {
+   display: flex;
+   align-items: center;
+ }
+
+ .talkroomwrap {
+   position: relative;
+   background-image: url("/background_img001.jpg");
+   background-size: cover;
+   min-height: 100%;
+ }
+
+ .talkheader {
+   width: 100%;
+   background-color: #fff;
+ }
+
+ .talkfooter {
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   background-color: #adadad;
+ }
+
+ .talkdetail {
+   height: 100% !important;
+ }
+
+ .backbaroon {
+   background-color: #fff;
+   padding-right: 20px;
+   padding-left: 20px;
+   width: 50px;
+ }
+
+ .marginzero {
+   margin: 0 !important;
+ }
+
+ .formwidth {
+   width: 100%;
+ }
+
+ .width1 {
+   width: 100px;
+ }
+
+ .talkballoon {
+   background-color: #fff;
+   padding: 5px 10px 5px 10px;
+   border-radius: 10%;
+ }
+
+ .nonedeco {
+   text-decoration: none;
+ }
+
+ .nonedeco:hover {
+   background-color: transparent;
+ }
