@@ -66,7 +66,7 @@
  }
 
  .fontcolor {
-   color: #fff;
+   color: #9197af;
    font-size: 45px;
  }
 
@@ -148,3 +148,32 @@
  .nonedeco:hover {
    background-color: transparent;
  }
+
+ .loginhead {
+   font-weight: bold;
+ }
+
+.itemsalign {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.padding0 {
+  margin-bottom: 0 !important;
+}
+
+.headfix {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.headfont {
+  font-weight: bold;
+
+}
+
+.logodisplay {
+  display: flex;
+  justify-content: flex-end;
+}

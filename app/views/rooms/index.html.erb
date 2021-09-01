@@ -1,9 +1,17 @@
-<h2>メッセージ一覧</h2>
-<% @anotherEntries.each do |e| %>
+
+<div class="container">
+  <br>
+  <div class="headfix">
+  <h1 class="headfont">トーク</h1>
+  </div>
+
+  <br>
+  <% @anotherEntries.each do |e| %>
+
     <table class="table table-striped">
         <tr>
             <td>
-　　　　　　　　　<!-- 名前からroomの詳細に飛べるようにリンク化 -->
+  　　　　　　　　　<!-- 名前からroomの詳細に飛べるようにリンク化 -->
                 <%= link_to room_path(e.room.id) do %>
 
                     <%= e.user.username %>
@@ -25,4 +33,7 @@
             </td>
         </tr>
     </table>
-<% end %>
+
+
+  <% end %>
+</div>

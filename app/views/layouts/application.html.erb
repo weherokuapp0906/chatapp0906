@@ -16,7 +16,7 @@
   <main class="wrapp">
 
 <div class="row rowwrapp m-0">
-  <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 headerclass p-0">
+  <div class="col-lg-1 col-md-1 col-sm-2 col-2 headerclass p-0">
     <div class="row mb-5 flexdesign">
       <div class="col-12 p-0 ">
          <%= link_to myuser_show_path, class: "nonedeco" do %>
@@ -46,7 +46,17 @@
 
 
   </div>
-  <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 p-0 mainview">
+  <div class="col-lg-11 col-md-11 col-sm-10 col-10 p-0 mainview">
+
+  <% if request.path.include?('rooms/') %>
+  <% else %>
+  <div class="logodisplay">
+  <p class="text-primary fw-bold mx-3 mt-2">LINK</p>
+  </div>
+  <% end %>
+
+
+
   <%= yield %>
   </div>
 </div>

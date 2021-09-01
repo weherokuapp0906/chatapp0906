@@ -1,10 +1,8 @@
-<h2>Log in</h2>
-
 <main class="form-signin">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-    <img class="mb-4" src="../images/bootstrap-logo.svg" alt="" width="72" height="57" loading="lazy">
-    <h1 class="h3 mb-3 fw-normal">サインインをどうぞ</h1>
+
+    <h1 class="text-center loginhead text-primary">LINK</h1>
 
     <div class="form-floating">
       <%= f.text_field :login, :class => "form-control", :id => "floatingInput", :placeholder => "name@example.com"  %>
@@ -28,7 +26,7 @@
     </div>
     <% end %>
 
-    <%= f.submit "サインイン", class: "w-100 btn btn-lg btn-primary" %>
+    <%= f.submit "ログイン", class: "w-100 btn btn-lg btn-primary" %>
     <!-- <button class="w-100 btn btn-lg btn-primary" type="submit">サインイン</button> -->
 
 
